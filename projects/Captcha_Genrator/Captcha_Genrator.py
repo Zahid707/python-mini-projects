@@ -14,6 +14,7 @@ from captcha.image import ImageCaptcha
 
 image = ImageCaptcha(fonts=['C:/Users/Administrator/Downloads/ChelseaMarketsr.ttf', 'C:/Users/Administrator/Downloads/DejaVuSanssr.ttf'])
 
+
 random=str(randint(100000,999999))
 data = image.generate(random)
 assert isinstance(data, BytesIO)
